@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media query.css">
+    <link rel="shortcut icon" href="assets/feature-zombie.png" type="image/x-icon">
+    <title>Portfolio | Vasanth</title>
+</head>
+<body>
+   <div class="container">
+    <!--  HEADER  OP NAVBAR -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Vasanth</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn" onclick="window.open('./assets/Vasanth CV.pdf')">Download CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+    <!-- MAIN -->
+    <main class="wrapper">
+
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Vasanth</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <br><span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Experienced frontend developer with a passion for creating visually stunning
+                   and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn" onclick="location.href='mailto:vasanthrp1812@gmail.com'">Hire Me</button>
+                <button class="btn" onclick="window.open('./assets/Vasanth CV.pdf')">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon" onclick="window.open('https://www.linkedin.com/in/vasanthrpbtech', '_blank')">
+                    <i class="uil uil-linkedin-alt" ></i></div>
+                <div class="icon" onclick="location.href='mailto:vasanthrp1812@gmail.com'">                     
+                    <i class="uil uil-envelope-edit"></i></i></div>
+                <div class="icon" onclick="window.open('https://github.com/vasanth1202', '_blank')">            
+                    <i class="uil uil-github-alt"></i></div>            
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <!-- <img src="assets/profile.png" alt="avatar"> -->
+                <img src="assets/profile 1.png" alt="avatar">
+            </div>
+          </div>
+
+       </section>
+
+       <section class="section" id="about">
+
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
+                    frameworks and libraries,which allows me to implement interactive features.
+                    Energetic, highly motivated, Information Technology graduate with a strong passion for technology.
+                    Seeking an entry-level position to apply academic knowledge and technical skills, contribute to innovative projects,
+                    Eager to contribute in a collaborative software development environment,and support the organization’s growth.
+                    Eager to gain hands-on experience, develop professionally,and be part of a dynamic and forward-thinking team.
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn" onclick="window.open('./assets/Vasanth CV.pdf')">Download CV <i class="uil uil-import"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col skill-container">
+
+                <div class="skills-box">
+                    <div class="skills-header"><h3 class="header">Frontend</h3></div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <div class="skills-header"><h3 class="header">Backend</h3></div>
+                    <div class="skills-list">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <div class="skills-header"><h3 class="header">Database</h3></div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+       </section>
+  
+        <section class="section" id="experience">
+
+            <div class="top-header"><h1>Experience</h1></div>
+
+            <div class="experience-upper-container">
+                <div class="experience-info">
+                    <h3>My Experience</h3>
+                    <p>
+                        As an aspiring frontend developer,I have built multiple responsive web applications that demonstrate my proficiency in HTML, CSS, JavaScript, and version controls.<br>Notably, BookVault a personal library management system with live deployment,<br><br>
+                        Weather Viewer (Full Stack Project–Python Flask, HTML, CSS, and JavaScript)Full-stack web app using Flask, HTML, CSS, and JavaScript to fetch and display real-time weather data from the OpenWeatherMap API.
+                        Applied MVC architecture with a Flask backend and a responsive frontend, enabling dynamic updates without page reloads via JSONdeveloped with clean UI principles and mobile responsiveness in mind.
+                        These hands-on projects reflect to write scalable,user-friendly code and responsive UI design.<br>
+                        I am actively seeking an opportunity where I can apply and grow my frontend development skills in real-world projects, within an innovation-driven team.
+                    </p>
+                </div>
+            </div>
+        </section>
+            
+       <section class="section" id="projects">
+        
+          <div class="top-header">
+              <h1>projects</h1>
+          </div>
+
+          <div class="project-container">
+
+            <div class="project-box">
+                <img src="./assets/Landing UI.jpeg" alt="Project 1"
+                class="project-img"/>
+                <h3>Bookvoult</h3>
+                <h2 class="project-title"></h2>
+                <div class="btn-container project-btn-container">
+                  <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/vasanth1202/bookvoult','_blank'">Github</button>
+                  <button class="btn btn-color-2 project-btn project-live-btn"
+                  onclick="location.href='https://vasanth1202.github.io/bookvoult/','_blank'">Live</button>
+                </div>
+                <!-- <label>Finished Projects</label> -->
+            </div>
+
+            <div class="project-box">
+                <img src="./assets/Weather viewer.png"alt="Project 2 is On Going" 
+                class="project-img"/>
+                <h3>Weather viewer</h3>
+                <div class="btn-container project-btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/vasanth1202/weather-viewer','_blank'">Github</button>
+                    <button class="btn btn-color-2 project-btn project-live-btn"
+                    onclick="location.href='https://#'">Live</button>
+                </div>
+                <!-- <label>Finished Projects</label> -->
+            </div>
+
+            <div class="project-box">
+                <img src="./assets/morden-portfolio.png"alt="Project 2 is On Going" 
+                class="project-img"/>
+                <h3>Portfolio</h3>
+                <div class="btn-container project-btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/vasanth1202/potfolio','_blank'">Github</button>
+                    <button class="btn btn-color-2 project-btn project-live-btn"
+                    onclick="location.href='https://https://vasanth1202.github.io/potfolio/','_blank'">Live</button>
+                </div>
+                <!-- <label>Finished Projects</label> -->
+            </div>
+            
+          </div>
+       </section>
+
+       <section class="section" id="contact">
+
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Contact Me Here</span>
+          </div>
+
+          <div class="row">
+
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: vasanthrp1812@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Mob: +91 9150975082</p>
+                </div>
+             </div>
+             <div class="col">
+
+                 <form id="contact-form" action="https://formspree.io/f/xwpnzyay" method="POST" class="form-control">
+                    <!-- Hidden fields for know it from where the msg is from-->
+                    <input type="hidden" name="_subject" value="📩 New message from Portfolio Website">
+                    <input type="hidden" name="website" value="Portfolio Website">
+
+                    <div class="form-inputs">
+                      <div class="input-container">
+                        <input type="text" name="name" placeholder=" " required>
+                        <label>Name</label>
+                      </div>
+                  
+                      <div class="input-container">
+                        <input type="email" name="email" placeholder=" " required>
+                        <label>Email</label>
+                      </div>
+                    </div>
+                
+                    <div class="text-area">
+                      <textarea name="message" placeholder="💡 Visitors please enter your Name, Email and Share your valuable suggestions/thoughts." required></textarea>
+                    </div>
+                
+                    <div class="form-button">
+                      <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                
+                    <!-- Success/Error Messages -->
+                    <p id="form-status"></p>
+                </form>
+
+             </div>
+          </div>
+       </section>
+
+    </main>
+    </div>
+
+    <footer>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Vasanth ↑ </a> - All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="script.js"></script>
+
+</body>
+</html>
