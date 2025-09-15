@@ -8,6 +8,43 @@
     .featured-name{
     font-size: 40px;
     }
+    .skills-box:hover
+    ,.about-info:hover
+    ,.experience-info:hover{
+        box-shadow: 0 10px 20px rgb(255, 0, 0,0.55);
+        transform: scale(1.5);
+        transform: translateY(-8px) scale(1.02);
+    }
+    .image{
+        border-radius: 25%;
+        animation: imgFloat 9s ease-in-out infinite;
+    }
+    @keyframes imgFloat {
+    0%{
+        transform: translateY(10px);
+        background-color: rgb(0, 247, 255);
+    }
+    20%{
+        background-color: rgb(4, 59, 60);
+        transform: translateY(10px);
+    }
+    40%{
+        background-color: rgb(10, 224, 139);
+        transform: translateY(10px);
+    }
+    60%{
+        transform: translateY(10px);
+        background-color: rgb(28, 10, 224);
+    }
+    80%{
+        background-color: rgb(224, 10, 185);
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(10px);
+        background-color: rgb(248, 0, 0);
+    } 
+}
 }
 @media only screen and (max-width: 1024px){
     .featured-text{
@@ -27,6 +64,7 @@
         width: 200px;
         height: 120px;
     }
+    
 }
 
 @media only screen and (max-width: 900px) {
@@ -172,6 +210,9 @@
     }
     .featured-text-btn {
         gap: 6px;
+    }
+    .contact-info p{
+    font-size: 14px;
     }
 
 }

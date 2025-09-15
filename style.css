@@ -238,7 +238,7 @@ nav{
     margin: auto 0;
     width: 380px;
     height: 380px;
-    border-radius: 55% 45% 55% 45%;
+    border-radius: 25%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
 }
@@ -247,41 +247,6 @@ nav{
     height: 380px;
     object-fit: cover;
 }
-/* @keyframes imgFloat {
-    0%{
-        transform: translateY(10px);
-        border-radius: 50% 45% 5% 1%;
-        background-color: rgb(0, 247, 255);
-        padding: 10px;
-    }
-    20%{
-        transform: translateY(10px);
-        border-radius: 45% 5% 45% 5%;
-    }
-    40%{
-        transform: translateY(10px);
-        border-radius: 15px ;
-    }
-    60%{
-        transform: translateY(10px);
-        border-radius: 10%;
-        background-color: rgb(0, 247, 255);
-        padding: 1rem;
-    }
-    80%{
-        transform: translateY(10px);
-        border-radius: 5% 45% 5% 45%;
-        background-color: rosybrown;
-        padding: 15px;
-    }
-    100%{
-        transform: translateY(10px);
-        border-radius: 1% 5% 45% 50%;
-        background-color: rgb(248, 0, 0);
-        padding: 15px;
-    }
-    
-} */
 .scroll-btn{
    position: absolute;
    bottom: 0;
@@ -318,7 +283,7 @@ nav{
     width: 50%;
 }
 
-/* -- ## --- RESUABLE CSS -- ## -- */
+/*  RESUABLE CSS  */
 .top-header{
     text-align: center;
     margin-bottom: 5em;
@@ -384,13 +349,7 @@ h3{
 .skills-box{
     margin: 10px;
 }
-.skills-box:hover
-,.about-info:hover
-,.experience-info:hover{
-    box-shadow: 0 10px 20px rgb(255, 0, 0,0.55);
-    transform: scale(1.5);
-    transform: translateY(-8px) scale(1.02);
-}
+
 .skills-header{
     margin-bottom: 30px;
 }
