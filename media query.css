@@ -192,16 +192,18 @@
         grid-template-columns: 1fr;
     }
     .skills-box{
-        width: 80px;
+        width: 6rem;
+        margin: 5px
     }
     .skills-list span{
         font-size: 10px;
     }
     .skills-list{
-        gap: 3px;
+        gap: 5px;
     }
     .header{
-        font-size: 15px;
+        font-size: 12px;
+        font-weight: 800;
     }
     .about-info p, .experience-info p {
         text-align: justify;
@@ -212,7 +214,16 @@
         gap: 6px;
     }
     .contact-info p{
-    font-size: 14px;
+    font-size: 17px;
+    }
+    .skills-header {
+        margin-bottom: 0px;
+    }
+    .section {
+        padding-block: 1em;
+    }
+    .contact-info p>i {
+        font-size: 25px;
     }
 
 }
