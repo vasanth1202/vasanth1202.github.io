@@ -187,7 +187,7 @@ form.addEventListener("submit", async function (e) {
     ].filter(Boolean);
 
     btns.forEach(btn => {
-    btn.textContent = current === "dark" ? "🌝" : "🌚";
+    btn.textContent = current === "dark" ? "🌞" : "🌚";
     });
   }
 

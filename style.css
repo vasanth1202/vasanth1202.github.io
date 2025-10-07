@@ -1,4 +1,4 @@
-/* POPPINS FONT Link */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
@@ -7,25 +7,41 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+/* SCROLL BAR DESIGN  */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: #7ff0f0;
+}
+::-webkit-scrollbar-thumb{
+    background: #7ff0f0;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #17aa03;
+    background:-webkit-linear-gradient( #150aa5,#7ff0f0,#7ff0f0,#150aa5);
+    border-radius: 1rem;
+    border-top-left-radius: 0px;
+}
 /*  VARIABLES  */
 :root{
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
-
     --text-color-second: rgb(68, 68, 68);
     --text-color-third: rgb(30, 159, 171);
-
     --first-color: rgb(110, 87, 224);
     --first-color-hover: rgb(40, 91, 212);
-
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
 
-/*🌞 Light & 🌚 Dark Theme Variables */
+/*Light & Dark Theme Variables */
 :root[data-theme="light"] {
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
@@ -71,32 +87,6 @@ body {
 .container{
     width: 100%;
     position: relative;
-}
-
-/*  SMOOTH SCROLL  */
-html{
-    scroll-behavior: smooth;
-}
-
-/*  CHANGE THE SCROLL BAR DESIGN  */
-::-webkit-scrollbar{
-    width: 10px;
-    border-radius: 25px;
-    border-top-left-radius: 0px;
-}
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
-    background: #7ff0f0;
-}
-::-webkit-scrollbar-thumb{
-    height: .5rem;
-    background: #ccc;
-    background: #7ff0f0;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #bbb;
-    background: #17aa03;
-    background:-webkit-linear-gradient( #150aa5,#7ff0f0,#7ff0f0,#150aa5);
 }
 
 /* ALL BUTTON DESIGN  */
@@ -313,7 +303,7 @@ nav{
     font-size: 20px;
 }
 
-/* ----- MAIN BOX ----- */
+/*  MAIN BOX  */
 .section{
     padding-block: 5em;
 }
@@ -348,11 +338,11 @@ h3{
     font-size: 20px;
     font-weight: 600;
     color: var(--text-color-second);
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     margin-top: 5px;
 }
 
-/* ----- ABOUT INFO ----- */
+/* ABOUT INFO */
 .about-info,.experience-info{
     position: relative;
     display: flex;
@@ -382,7 +372,7 @@ h3{
     background: var(--first-color-hover);
 }
 
-/* ----- ABOUT / SKILLS BOX ----- */
+/* ABOUT AND SKILLS BOX */
 .skills-box{
     position: relative;
     display: flex;
@@ -415,7 +405,7 @@ h3{
     border-radius: 5px;
 }
 
-/* ----- PROJECTS BOX ----- */
+/* PROJECTS BOX */
 .project-container{
     display: flex;
     width: 100%;
@@ -441,9 +431,14 @@ h3{
     height: 120px;
     border-radius: .5rem;
 }
+.project-box h3{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
 .project-box label{
     font-size: 15px;
     color: #777;
+    margin-bottom: 5px;
 }
 .project-box:hover.project-box::after,
 .contact-info:hover.contact-info::after{
@@ -455,8 +450,8 @@ h3{
     color:var(--text-color-third);
 }
 .project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
+.project-box:hover.project-box>h3
+{
     color: var(--first-color);
     transition: transform 0.4s ease;
     transform: scaleX(1.3);
@@ -465,7 +460,7 @@ h3{
     background-color: var(--text-color-third);
 }
 
-/* ----- CONTACT BOX ----- */
+/* CONTACT BOX */
 .contact-info{
     position: relative;
     display: flex;
@@ -514,7 +509,7 @@ h3{
     z-index: 2;
 }
 
-/* ----- CONTACT FORM ----- */
+/* CONTACT FORM */
 .form-control{
     display: flex;
     flex-direction: column;
@@ -560,15 +555,13 @@ textarea{
     rotate: -45deg;
 }
 
-/* ----- FOOTER BOX ----- */
+/* FOOTER BOX */
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    /* background: #F8F8F8; */
-    /* padding-block: 5px 60px; */
 }
 footer a,.bottom-footer{
     text-decoration: none;
@@ -639,7 +632,7 @@ footer a,.bottom-footer{
   margin-top: 1rem;
 }
 
-/* Success/Error message */
+/* Success or Error msg */
 #form-status {
   margin-top: 1rem;
   font-size: 0.95rem;
