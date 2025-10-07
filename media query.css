@@ -219,20 +219,22 @@
     }
     .skill-container{
         grid-template-columns: 1fr;
+        display: grid;
+        gap:1rem;
     }
     .skills-box{
-        width: 6rem;
-        margin: 5px
+        width: 100%;
+        margin: 5px;
     }
     .skills-list span{
-        font-size: 10px;
+        font-size: 13px;
     }
     .skills-list{
         gap: 5px;
     }
     .header{
-        font-size: 12px;
-        font-weight: 800;
+        font-size: 17px;
+        font-weight: 1000;
     }
     .about-info p, .experience-info p {
         text-align: justify;
