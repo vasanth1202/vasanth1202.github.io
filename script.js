@@ -1,6 +1,6 @@
 function myMenuFunction() {
   const menu = document.getElementById("myNavMenu");
-  menu.classList.toggle("responsive"); // toggle responsive class
+  menu.classList.toggle("responsive");
 }
 
 // Close menu when clicking outside
@@ -52,7 +52,7 @@ document.querySelectorAll(".nav-link").forEach(link => {
 
 /* ----- TYPING EFFECT ----- */
    var typingEffect = new Typed(".typedText",{
-      strings : ['Frontend Developer','Python programmer','Software Engineer'],
+      strings : ['Software Developer','Frontend Developer','Python programmer','Software Engineer'],
       loop : true,
       typeSpeed : 100, 
       backSpeed : 80,
@@ -150,6 +150,52 @@ form.addEventListener("submit", async function (e) {
     }, 5000);
   }
 });
+
+   //THEME TOGGLER
+
+  (function initTheme() {
+    const root = document.documentElement;
+    const saved = localStorage.getItem("theme");
+
+    if (saved === "dark" || saved === "light") {
+      root.setAttribute("data-theme", saved);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      root.setAttribute("data-theme", "dark");
+    } else {
+      root.setAttribute("data-theme", "light");
+    }
+
+    updateToggleIcons();
+  })();
+
+  function setTheme(next) {
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+    updateToggleIcons();
+  }
+
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute("data-theme") || "light";
+    setTheme(current === "dark" ? "light" : "dark");
+  }
+
+  function updateToggleIcons() {
+    const current = document.documentElement.getAttribute("data-theme") || "light";
+    const btns = [
+      document.getElementById("theme-toggle"),
+      document.getElementById("theme-toggle-mobile")
+    ].filter(Boolean);
+
+    btns.forEach(btn => {
+    btn.textContent = current === "dark" ? "🌝" : "🌚";
+    });
+  }
+
+  document.addEventListener("click", (e) => {
+    if (e.target && (e.target.id === "theme-toggle" || e.target.id === "theme-toggle-mobile")) {
+      toggleTheme();
+    }
+  });
 
 
 /* ----- CHANGE ACTIVE LINK ----- */

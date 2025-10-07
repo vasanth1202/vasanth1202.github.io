@@ -1,6 +1,13 @@
 /* POPPINS FONT Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 /*  VARIABLES  */
 :root{
     --body-color: rgb(250, 250, 250);
@@ -18,12 +25,50 @@
 
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/*🌞 Light & 🌚 Dark Theme Variables */
+:root[data-theme="light"] {
+    --body-color: rgb(250, 250, 250);
+    --color-white: rgb(255, 255, 255);
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(30, 159, 171);
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+    --second-color: rgb(0, 201, 255);
+    --third-color: rgb(192, 166, 49);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
+
+:root[data-theme="dark"] {
+    --body-color: rgb(17, 17, 17);
+    --color-white: rgb(30, 30, 30);
+    --text-color-second: rgb(230, 230, 230);
+    --text-color-third: rgb(0, 201, 255);
+    --first-color: rgb(0, 201, 255);
+    --first-color-hover: rgb(0, 162, 212);
+    --second-color: rgb(255, 179, 71);
+    --third-color: rgb(255, 255, 255);
+    --first-shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color-second);
+    /* color: var(--color-white); */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Toggle button styles */
+.theme-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    transition: transform 0.2s ease;
+}
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
 
 body{
     background: var(--body-color);
@@ -43,16 +88,19 @@ html{
 ::-webkit-scrollbar{
     width: 10px;
     border-radius: 25px;
+    border-top-left-radius: 0px;
 }
 ::-webkit-scrollbar-track{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb{
     background: #ccc;
-    border-radius: 30px;
+    /* border-radius: 30px; */
+    /* border-top-left-radius: 0px; */
 }
 ::-webkit-scrollbar-thumb:hover{
     background: #bbb;
+    background: #17aa03;
 }
 
 /* ALL BUTTON DESIGN  */
@@ -108,6 +156,7 @@ nav{
 }
 .nav-menu, .nav_menu_list{
     display: flex;
+    align-items: center;
 }
 .nav-menu .nav_list{
     list-style: none;
@@ -295,6 +344,9 @@ nav{
 }
 .top-header span{
     color: #999;
+}
+.contact{
+    padding-bottom: 0em;
 }
 h3{
     font-size: 20px;
@@ -520,7 +572,7 @@ footer{
     flex-direction: column;
     row-gap: 30px;
     background: #F8F8F8;
-    padding-block: 40px 60px;
+    padding-block: 5px 60px;
 }
 .top-footer p{
     font-size: 25px;
@@ -584,11 +636,15 @@ footer{
 .input-container input:focus + label,
 .input-container input:not(:placeholder-shown) + label {
   top: -0.5rem;
-  left: 0.4rem;
+  left: 0rem;
   font-size: 0.8rem;
+  font-size: 1rem;
   color: #333;
   background-color: #fff;
   padding: 0 0.25rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 10px;
 }
 
 .text-area {
@@ -618,5 +674,6 @@ footer{
 #form-status.error {
   color: red;
 }
+
 
 
