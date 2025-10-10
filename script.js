@@ -3,6 +3,7 @@ function myMenuFunction() {
   menu.classList.toggle("responsive");
 }
 
+
 // Close menu when clicking outside
 document.addEventListener("click", function (event) {
   const menu = document.getElementById("myNavMenu");
@@ -221,3 +222,4 @@ form.addEventListener("submit", async function (e) {
   }
 
   window.addEventListener('scroll', scrollActive)
+  
